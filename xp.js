@@ -16,7 +16,7 @@ client.slash = require("./utils/slash-commands.js");
 module.exports = client;
 const http = require("http");
 console.log("\nLoading...");
-console.log("If This Take Too long make sure u have add right token!");
+console.log("Running");
 const api = require('novelcovid');
 	const moment = require('moment');
 client.config = config1;
@@ -45,19 +45,17 @@ const { readdirSync } = require("fs");
 client.on('ready', () => {
    var arrayOfStatus = [
         `${client.users.cache.size} users`,//change this with your status
-        `.help for my help!`,//change this with your status
-        `${client.guilds.cache.size} Servers!!`,
-        `https://www.dumb-dsc.tk/`,
-        `waiting for verification ☹️`,
+        `+help`,//change this with your status
+        `${client.guilds.cache.size} Servers`,
+        `waiting for verification`,
         `${db.fetch(`status`)}`
     ];
      setInterval(() => {
         var arrayOfStatus = [
         `${client.users.cache.size} users`,//change this with your status
-        `.help for my help!`,//change this with your status
-        `${client.guilds.cache.size} Servers!!`,
-        `https://www.dumb-dsc.tk/`,
-        `waiting for verification ☹️`,
+        `+help for my help!`,//change this with your status
+        `${client.guilds.cache.size} Servers`,
+        `waiting for verification`,
         `${db.fetch(`status`)}`
     ];
     }, 60000)
@@ -71,7 +69,7 @@ let index = 0;
     }, 10000)
    
 
-        console.log(`logged in as ${client.user.username} BOT ✅`)
+        console.log(` ${client.user.username} Has Logged In. ✅`)
    const clientDetail = {
      guilds: client.guilds.cache.size,
      users: client.users.cache.size,
@@ -124,10 +122,7 @@ app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`))
 })
 
 
-client.on("message", async message => {
-  let startemojis = require("./nitro_emojis_handler/main.js")
-  startemojis(client, message, db)
-})
+
 
 client.commands = new Collection();
 client.aliases = new Collection();
@@ -418,5 +413,29 @@ fs.readdir("./events/", (err, files) => {
  
 
 
-
+if(config.registercommands === true) {
+async function registerSlashCommands(dir) {;
+    fs.readdir(path.join(__dirname, dir), async (err, files) => {
+        if(err){
+            return console.log(chalk.red('An error occured when checking the commands folder for commands to load: ' + err));
+        };
+        files.forEach(async (file) => {
+            fs.stat(path.join(__dirname, dir, file), (err, stat) => {
+                if(err) return console.log(chalk.red('An error occured when checking the commands folder for commands to load: ' + err));
+                if(stat.isDirectory()) {
+                    registerSlashCommands(path.join(dir, file));
+                } else {
+                    if(!file.endsWith('.js')) return;
+                    let commandFile = require(path.join(__dirname, dir, file));
+                    slashCommandList.push({
+                        run: commandFile.slashCommand,
+                        name: file.split('.')[0]
+                    });
+                };
+            });
+        });
+    });
+};
+registerSlashCommands('./commands/');
+}
 client.login(config.token);
