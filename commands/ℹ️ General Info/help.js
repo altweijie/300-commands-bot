@@ -56,24 +56,24 @@ module.exports = {
 
 
 
-        .addField("**:information_source: BOT CODE INFO**", "`dependencies`, `modules`, `servers`, `stats`, `uptime`\n\n**:information_source: GENERAL INFO**\n`djs`, `help`, `invite`, `links`, `ping`, `serverstats`, `vote`, **`privacy`**\n\n**<:dev:819420051240517663>** **OWNERS**\n`shell`, `control`, `eval`, `usage`\n\n <a:love_Triangle:842268584192376852> **Guessing Games** <a:love_Triangle:842268584192376852>\n `find-words`, `guess-number`, `lovecalc`\n\n :cake: **Birthday Commands** :cake:\n `set-birthday`, `check-birthday`\n\n **Anti Bad Words**\n `anti-badwords`")
+        .addField("**BOT CODE INFO**", "`dependencies`, `modules`, `servers`, `stats`, `uptime`\n\n**GENERAL INFO**\n`djs`, `help`, `invite`, `links`, `ping`, `serverstats`, **`privacy`**\n\n** ** **OWNERS**\n`shell`, `control`, `eval`, `usage`\n\n**Guessing Games** \n `find-words`, `guess-number`, `lovecalc`\n\n  **Birthday Commands**\n `set-birthday`, `check-birthday`\n\n **Anti Bad Words**\n `anti-badwords`")
 
 
-        .addField("**:dolls: AUTOMOD**", "`anti-alt`, `antilink`, `autonick`, `auto-official-role`, `auto-official-role-disable`, `autorole`, `role-all`\n\n**<:laugh:819852535711268865> FUN**\n`afk`, `animesearch`, `ascii`, `baka`, `beep`, `dumb`, `calc`, `cattext`, `dice`, `eightball`, `flipcoin`, `fliptext`, `hack`, `iq`, `joke`, `kill`, `messages`, `poke`, `poll`, `ratewaifu`, `rps`, `sneeze`, `waifu`, `youtube`, `zalgo`\n\n **Information Of People**\n `Profile`\n\n **Biography**\n `set-bio`, `bio-reset`, `check-bio`\n\n **Custom Commands**\n `cc-create`, `cc-delete`, `cc-list`")
+        .addField("**AUTOMOD**", "`anti-alt`, `antilink`, `autonick`, `auto-official-role`, `auto-official-role-disable`, `autorole`, `role-all`\n\n**FUN**\n`afk`, `animesearch`, `ascii`, `baka`, `beep`, `dumb`, `calc`, `cattext`, `dice`, `eightball`, `flipcoin`, `fliptext`, `hack`, `iq`, `joke`, `kill`, `messages`, `poke`, `poll`, `ratewaifu`, `rps`, `sneeze`, `waifu`, `youtube`, `zalgo`\n\n **Information Of People**\n `Profile`\n\n **Biography**\n `set-bio`, `bio-reset`, `check-bio`\n\n **Custom Commands**\n `cc-create`, `cc-delete`, `cc-list`")
 
 
-        .addField("**:level_slider: LEVELING**", "`rank`\n\n**<:money:835761381008736286> ECONOMY**\n`addmoney`, `balance`, `beg`, `bet`, `buy`, `daily`, `deposit`, `monthly`, `pay`, `profile`, `roulette`, `weekly`, `withdraw`, `work`\n\n**<a:cast:835758300511338516> LOGS**\n`logs-ticket`, `set-logs`, `remove-logs`\n\n**<a:giveaway:835759764934754324> GIVEAWAY**\n`edit`, `list`, `end`, `reroll`, `start`,`create`, `cancel`\n\n**<a:music:835760380512043008> MUSIC**\n`24/7`, `bassboost`, `dc`, `connect`, `lyrics`, `np`, `pause`, `play`, `queue`, `resume`, `shuffle`, `skip`, `stop`, `volume`\n\n**<a:warning:835759241674358794> REPORT**\n`suggest`, `bug-report`\n\n**<a:welcome:835761777144889364> WELCOME AND LEAVE**\n`leave`, `set-welcome`, `set-leave`, `welcome`")
+        .addField("**LEVELING**", "`rank`\n\n** ECONOMY**\n`addmoney`, `bal`, `beg`, `bet`, `buy`, `daily`, `deposit`, `monthly`, `pay`, `profile`, `roulette`, `weekly`, `withdraw`, `work`\n\n**LOGS**\n`logs-ticket`, `set-logs`, `remove-logs`\n\n**GIVEAWAY**\n`edit`, `list`, `end`, `reroll`, `start`,`create`, `cancel`\n\n\** REPORT**\n`suggest`, `bug-report`\n\n**WELCOME AND LEAVE**\n`leave`, `set-welcome`, `set-leave`, `welcome`")
 
 
+        
 
 
+        .addField("**TICKET**", "`add`, `close`, `delete`, `new`, `open`, `remove`, `setup`\n\n** REACTION ROLES**\n`reaction-role`, `reaction-role-remove`\n\n**GAMES**\n`csgo`, `poke`, `slots`, `tictactoe`\n\n**IMAGE**\n`3000yr`, `approved`, `batslap`, `beautiful`, `brazzers`, `burn`, `cat`, `challenger`, `cuddle`, `dict`, `distort`, `dog`, `ddungeon`, `facechange`, `fire`, `flatearth`, `foxgirl`, `gay`, `hug`, `kiss`, `love`, `magik`, `meme`, `qrcode`, `randomav`, `rip`, `scary`, `slap`, `triggered`, `tickle`, `tweet`, `vs`, `wanted`")
 
-        .addField("**:ticket: TICKET**", "`add`, `close`, `delete`, `new`, `open`, `remove`, `setup`\n\n**:performing_arts:REACTION ROLES**\n`reaction-role`, `reaction-role-remove`\n\n**:video_game: GAMES**\n`csgo`, `poke`, `slots`, `tictactoe`\n\n**:frame_photo: IMAGE**\n`3000yr`, `approved`, `batslap`, `beautiful`, `brazzers`, `burn`, `cat`, `challenger`, `cuddle`, `dict`, `distort`, `dog`, `ddungeon`, `facechange`, `fire`, `flatearth`, `foxgirl`, `gay`, `hug`, `kiss`, `love`, `magik`, `meme`, `qrcode`, `randomav`, `rip`, `scary`, `slap`, `triggered`, `tickle`, `tweet`, `vs`, `wanted`")
 
+        .addField("**MODERATION**", "`announce`, `ban`, `color`, `hide`, `kick`, `lock`, `maintainence`, `nuke`, `prune`, `purge`, `say`, `sendembed`, `serverlock`, `serverunlock`, `set`, `slowmode`, `stealemoji`, `unban`, `unhide`, `unlock`, `vcid`, `voicedeafen`, `voicekick`, `voicemove`, `voicemute`, `voiceundeaf`, `voiceunmute`, `warn`, `warns`\n\n**CHATBOT**\n`remove-channel`, `set-channel`\n\n**UTILITY**\n`avatar`, `covid`, `id`, `members`, `roleid`, `github`, `servericon`, `serverinfo`, `time`, `info`, `weather`")
 
-        .addField("**:tools: MODERATION**", "`announce`, `ban`, `color`, `hide`, `kick`, `lock`, `maintainence`, `nuke`, `prune`, `purge`, `say`, `sendembed`, `serverlock`, `serverunlock`, `set`, `slowmode`, `stealemoji`, `unban`, `unhide`, `unlock`, `vcid`, `voicedeafen`, `voicekick`, `voicemove`, `voicemute`, `voiceundeaf`, `voiceunmute`, `warn`, `warns`\n\n**:robot:CHATBOT**\n`remove-channel`, `set-channel`\n\n**:toolbox: UTILITY**\n`avatar`, `covid`, `id`, `members`, `roleid`, `github`, `servericon`, `serverinfo`, `time`, `info`, `weather`")
-
-       
+      
 
         .setFooter(
           `Requested by ${message.author.tag} | Total ${commandscount} Commands`,
@@ -124,6 +124,7 @@ module.exports = {
         .setFooter(
           `Requested by ${message.author.tag}`,
           message.author.displayAvatarURL({ dynamic: true })
+          
         )
         .setTimestamp()
         .setColor(roleColor);
